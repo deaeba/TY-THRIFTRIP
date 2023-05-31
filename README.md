@@ -39,3 +39,4 @@
    3. use effect hook
    4. use reducer hook
 10. Creating Rating ProductItem Components
+11. Set Page Title
