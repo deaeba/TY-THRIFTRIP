@@ -40,3 +40,4 @@
    4. use reducer hook
 10. Creating Rating ProductItem Components
 11. Set Page Title
+12. Load Products By React Query
