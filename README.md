@@ -47,3 +47,4 @@
 16. Implement Add To Cart
 17. Add To Cart In Product Page
 18. Create Cart Page
+19. Implement Remove From Cart

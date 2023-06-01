@@ -1,3 +1,5 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React from "react";
 import { Cart, CartItem } from "./types/Cart";
 type AppState = {
@@ -32,7 +34,8 @@ const initialState: AppState = {
 
 type Action =
   | { type: "SWITCH_MODE" }
-  | { type: "CART_ADD_ITEM"; payload: CartItem };
+  | { type: "CART_ADD_ITEM"; payload: CartItem }
+  | { type: "CART_REMOVE_ITEM"; payload: CartItem };
 
 function reducer(state: AppState, action: Action): AppState {
   switch (action.type) {
@@ -52,6 +55,13 @@ function reducer(state: AppState, action: Action): AppState {
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
       return { ...state, cart: { ...state.cart, cartItems } };
+    case "CART_REMOVE_ITEM": {
+      const cartItems = state.cart.cartItems.filter(
+        (item: CartItem) => item._id !== action.payload._id
+      );
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      return { ...state, cart: { ...state.cart, cartItems } };
+    }
 
     default:
       return state;
@@ -65,7 +75,7 @@ const Store = React.createContext({
   dispatch: defaultDispatch,
 });
 
-function StoreProvider(props: React.PropsWithChildren<{}>) {
+function StoreProvider(props: React.PropsWithChildren<unknown>) {
   const [state, dispatch] = React.useReducer<React.Reducer<AppState, Action>>(
     reducer,
     initialState
