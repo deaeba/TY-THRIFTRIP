@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Store } from "./Store";
-i;
+
 function App() {
   const {
     state: { mode, cart },

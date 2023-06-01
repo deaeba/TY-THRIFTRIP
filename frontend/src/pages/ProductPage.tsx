@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useContext } from "react";
 import { Badge, Button, Card, Col, ListGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
@@ -9,6 +10,7 @@ import Rating from "../components/Rating";
 import { useGetProductDetailsBySlugQuery } from "../hooks/productHooks";
 import { Store } from "../Store";
 import { ApiError } from "../types/ApiError";
+import { convertProductToCartItem, getError } from "../utils";
 
 export default function ProductPage() {
   const params = useParams();
