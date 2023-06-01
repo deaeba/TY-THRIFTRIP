@@ -2,6 +2,9 @@
 /build
 
 
+.env
+
+
 
 # system files
 .DS_Store
