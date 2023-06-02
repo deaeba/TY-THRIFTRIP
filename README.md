@@ -55,3 +55,4 @@
 24. Create Payment Page
 25. Build Order Api
 26. Create Place order Page
+27. Create Order Page
