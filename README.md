@@ -49,3 +49,5 @@
 18. Create Cart Page
 19. Implement Remove From Cart
 20. Create User Signin Api
+21. Create User Sign In Page
+22. Register User
