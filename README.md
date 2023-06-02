@@ -52,3 +52,4 @@
 21. Create User Sign In Page
 22. Register User
 23. Create Shipping Page
+24. Create Payment Page
