@@ -60,3 +60,4 @@
 29. Create Order History Page
 30. Make Website Like Amazon Dupe
 31. Publish Website On A Render
+32. Create Profile Page
