@@ -61,3 +61,4 @@
 30. Make Website Like Amazon Dupe
 31. Publish Website On A Render
 32. Create Profile Page
+33. Add-Sidebar-Searchbox
