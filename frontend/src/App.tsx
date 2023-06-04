@@ -195,6 +195,7 @@ function App() {
               {getError(error as ApiError)}
             </MessageBox>
           ) : (
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             categories!.map((category) => (
               <ListGroup.Item action key={category}>
                 <LinkContainer
