@@ -10,13 +10,11 @@ import { getError } from "../utils";
 export default function OrderHistoryPage() {
   const navigate = useNavigate();
   const { data: orders, isLoading, error } = useGetOrderHistoryQuery();
-
   return (
     <div>
       <Helmet>
         <title>Order History</title>
       </Helmet>
-
       <h1>Order History</h1>
       {isLoading ? (
         <LoadingBox></LoadingBox>
@@ -35,7 +33,7 @@ export default function OrderHistoryPage() {
             </tr>
           </thead>
           <tbody>
-            {orders?.map((order) => (
+            {orders!.map((order) => (
               <tr key={order._id}>
                 <td>{order._id}</td>
                 <td>{order.createdAt.substring(0, 10)}</td>
