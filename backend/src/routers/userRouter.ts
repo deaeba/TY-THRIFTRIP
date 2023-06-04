@@ -25,6 +25,7 @@ userRouter.post(
     res.status(401).json({ message: "Invalid email or password" });
   })
 );
+
 userRouter.post(
   "/signup",
   asyncHandler(async (req: Request, res: Response) => {
@@ -42,6 +43,7 @@ userRouter.post(
     });
   })
 );
+
 userRouter.put(
   "/profile",
   isAuth,

@@ -28,8 +28,8 @@ img.thumbnail {
   color: #a0a0a0;
 }
 .checkout-steps > div.active {
-  border-bottom: 0.2rem solid #f08000;
-  color: #f08000;
+  border-bottom: 0.2rem solid #8700ff;
+  color: #8700ff;
 }
 .dropdown-menu[data-bs-popper] {
   left: auto;
@@ -37,7 +37,7 @@ img.thumbnail {
 }
 .btn-primary,
 .btn-outline-primary {
-  background-color: #f0c040;
+  background-color: #8700ff;
   color: #000000;
 }
 
@@ -76,7 +76,7 @@ a.header-link:hover,
 
 .cart-badge {
   position: absolute;
-  color: #f08000;
+  color: #8700ff;
   font-weight: bold;
   margin-left: 16px;
   margin-top: -3px;
