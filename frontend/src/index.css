@@ -1,42 +1,49 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
+
 .product-image {
+  max-width: 400px;
   width: 100%;
-  height: 100%;
-  max-width: max-content;
 }
+
 .rating span {
-  color: #8700ff;
+  color: #9400ff;
 }
+
 img.large {
-  max-width: 300px;
+  max-width: 400px;
 }
 img.thumbnail {
-  height: 80px;
+  height: 120px;
 }
+
 .small-container {
-  max-width: 600px;
+  max-width: 800px;
+  max-height: fit-content;
 }
+
 .checkout-steps > div {
   border-bottom: 0.2rem solid #a0a0a0;
   color: #a0a0a0;
 }
 .checkout-steps > div.active {
-  border-bottom: 0.2rem solid #8700ff;
-  color: #8700ff;
+  border-bottom: 0.2rem solid #9400ff;
+  color: #9400ff;
 }
+
 .dropdown-menu[data-bs-popper] {
   left: auto;
   right: 0;
 }
 .btn-primary,
 .btn-outline-primary {
-  background-color: #8700ff;
+  background-color: #9400ff;
   color: #000000;
 }
 
@@ -75,11 +82,13 @@ a.header-link:hover,
 
 .cart-badge {
   position: absolute;
-  color: #8700ff;
+  color: #9400ff;
   font-weight: bold;
   margin-left: 16px;
   margin-top: -3px;
 }
+
+/* Sidebar */
 .side-navbar-backdrop {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
